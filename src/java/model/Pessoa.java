@@ -1,18 +1,14 @@
 
 package model;
 
-import java.util.Calendar;
 import java.util.Date;
-
 
 public class Pessoa {
 
     private int cod;
     private String nome;
     private String cpf;
-    private Date nascimento, data;
-
-    
+    private Date nascimento;
     
     public int getCod() {
         return cod;
@@ -44,19 +40,5 @@ public class Pessoa {
 
     public void setNascimento(Date nascimento) {
         this.nascimento = nascimento;
-    }
-
-    public Date getData() {
-        return data;
-    }
-
-    public void setData(Date data) {
-        this.data = data;
-    }
-
-   
-    
-    
-    
-    
+    }    
 }
