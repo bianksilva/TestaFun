@@ -1,9 +1,3 @@
-<%-- 
-    Document   : cadastrar_pessoa
-    Created on : 25/03/2021, 10:58:26
-    Author     : Bianca Silva
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,7 +6,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/249b1afbd0.js" crossorigin="anonymous"></script>
 
-        <title>JSP Page</title>
+        <title>Cadastrar Pessoa</title>
     </head>
     <body>
         <div class=" container ">
@@ -44,7 +38,7 @@
 
                 </fieldset> <br>
                 <div class="botoes col">
-                    <button type="submit" value="gravar" class="btn btn-info col-md-2" >Cadastrar</button>
+                    <button type="submit" value="gravar" class="btn btn-success col-md-2" >Cadastrar</button>
                     
                     <a class="btn btn-danger col-md-2" href="index.jsp" >Voltar</a>
                 </div>
