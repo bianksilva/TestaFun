@@ -1,9 +1,3 @@
-<%-- 
-    Document   : cadastrar_pessoa
-    Created on : 25/03/2021, 10:58:26
-    Author     : Bianca Silva
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -25,26 +19,26 @@
                         <div class="row">
                             <div class="col-6">
                                 <label for="nome">Nome Completo</label>
-                                <input type="text" name="nome" value="${pessoa.nome}" class="form-control" id="nome" >
+                                <input type="text" name="nome" value="${pessoa.nome}" class="form-control" id="nome" readonly>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-3">
                                 <label for="nome">CPF</label>
-                                <input type="text" name="cpf" value="${pessoa.cpf}" class="form-control" id="cpf" >
+                                <input type="text" name="cpf" value="${pessoa.cpf}" class="form-control" id="cpf" readonly>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-3">
                                 <label  for="nascimento">Nascimento</label>
-                                <input type="date" name="nascimento" value="${pessoa.nascimento}" class="form-control">
+                                <input type="date" name="nascimento" value="${pessoa.nascimento}" class="form-control" readonly>
                             </div>
                         </div>
 
                 </fieldset> <br>
                 <div class="botoes col">
-                    <button type="submit" value="gravar" class="btn btn-info col-md-2" >Cadastrar</button>
+                    <a class="btn btn-info col-md-2" href="./PessoaController?acao=alterar&cod=${pessoa.cod}" >Alterar</a>
                     <a class="btn btn-danger col-md-2" href="index.jsp" >Voltar</a>
                 </div>
             </form>
